@@ -1,3 +1,3 @@
-function click(click){
+function click(){
     alert("Não funciona com trouxas :( ");
 }
