@@ -2,24 +2,12 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
+  color: #DAD3C5;
   box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-nav,
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.9;
-}
-a:hover {
-  opacity: 1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-header {
+.header {
   width: 100%;
   position: absolute;
   top: 0;
@@ -30,14 +18,32 @@ header {
   padding: 20px 50px;
   background-color: #fff;
 }
-header img {
+
+.header .header__img {
   width: 180px;
-  margin-left: 70px;
+  margin-left: none;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+  color: #FF8C00;
 }
 
 header nav {
   display: flex;
 }
+
 header li a {
   color: black;
 }
@@ -49,23 +55,25 @@ header li {
 header li:first-child {
   margin-left: 0;
 }
+
 header li:last-child {
   margin-left: 0;
 }
+
 @media (max-width: 700px) {
   header {
     flex-direction: column;
   }
+
   header img {
     scroll-margin-bottom: 15px;
   }
 }
-
 .hero {
-  background-image: url(img/hero.jpg);
+  background-image: url(../img/hero.jpg);
   background-size: cover;
   min-height: 100vh;
-  color: #fff;
+  color: #DAD3C5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,52 +81,61 @@ header li:last-child {
 }
 
 .hero h1 {
-  color: #fff;
+  color: #FF8C00;
   font-size: 2.3rem;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .hero h3 {
-  color: #fff;
+  color: #FF8C00;
   font-size: 2rem;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .hero .btn {
-  background-color: #fff;
+  background-color: #DAD3C5;
   border-radius: 4px;
-  color: black;
+  color: #FF8C00;
   padding: 20px 50px;
   text-transform: uppercase;
+  transition: 3;
 }
+.hero .btn:hover {
+  color: #DAD3C5;
+  background-color: #FF8C00;
+}
+
 @media (max-width: 700px) {
   .hero h1 {
     font-size: 2.5rem;
   }
+
   .hero h3 {
     font-size: 1.5rem;
   }
 }
-
 .conhecaHog {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 50px;
 }
+
 .conhecaHog h3 {
   color: #708090;
   font-size: 2rem;
   margin-bottom: 35px;
 }
+
 .conhecaHog p {
   color: #708090;
   max-width: 800px;
   margin-bottom: 35px;
   text-align: center;
 }
+
 .conhecaHog hr {
   background-color: #708090;
   width: 200px;
@@ -146,35 +163,38 @@ header li:last-child {
 .conhecaHog .grid li.small {
   flex-basis: 40%;
 }
+
 .conhecaHog .grid li.large {
   flex-basis: 60%;
 }
 
 @media (max-width: 700px) {
   .conhecaHog .grid li.small,
-  .conhecaHog .grid li.large {
+.conhecaHog .grid li.large {
     flex-basis: 100%;
   }
 }
-
 .caracter {
-  background-color: rgb(179, 136, 101);
+  background-color: #b38865;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 50px;
 }
+
 .caracter h3 {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 35px;
 }
+
 .caracter p {
   color: #fff;
   max-width: 800px;
   margin-bottom: 35px;
   text-align: center;
 }
+
 .caracter hr {
   background-color: #fff;
   width: 200px;
@@ -201,12 +221,14 @@ header li:last-child {
   font-size: 2rem;
   margin-bottom: 35px;
 }
+
 .ingressar p {
   color: #708090;
   max-width: 800px;
   margin-bottom: 35px;
   text-align: center;
 }
+
 .ingressar hr {
   color: #708090;
   width: 200px;
@@ -247,13 +269,13 @@ header li:last-child {
   border-radius: 4px;
   cursor: pointer;
 }
+
 @media (max-width: 700px) {
   .ingressar input {
     flex-basis: 100%;
     margin-bottom: 15px;
   }
 }
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -279,3 +301,5 @@ header li:last-child {
   font-size: 2rem;
   align-items: center;
 }
+
+/*# sourceMappingURL=style.css.map */
