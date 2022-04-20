@@ -100,7 +100,7 @@ header li:last-child {
   color: #FF8C00;
   padding: 20px 50px;
   text-transform: uppercase;
-  transition: 3;
+  transition: 0.3s;
 }
 .hero .btn:hover {
   color: #DAD3C5;
